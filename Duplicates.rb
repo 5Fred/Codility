@@ -4,7 +4,7 @@
 =end
 
 def find_duplicates(arr)
-    # Your code here
+    arr.collect { |num| num if arr.count(num) > 1 }.compact.uniq
 end
   
 # Example usage

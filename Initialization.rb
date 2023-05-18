@@ -4,12 +4,18 @@
 =end
 
 class Person
-    attr_accessor :name, :age
-  
-    def initialize(name, age)
-      # Your code here
-    end
+  attr_accessor :name, :age
+
+  def initialize(name, age)
+    @name = name
+    @age = age
+  end
 end
+
+person = Person.new("John Doe", 25)
+puts person.name
+puts person.age
+
   
 # Example usage
 person = Person.new("John Doe", 25)

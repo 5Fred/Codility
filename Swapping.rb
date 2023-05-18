@@ -4,7 +4,10 @@
 =end
 
 def variable_swap(a, b)
-    # Your code here
+    temp = a
+    a = b
+    b = temp
+    return a, b
 end
   
 # Example usage
